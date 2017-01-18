@@ -1,17 +1,15 @@
         a:hover{
             color:rgb(150,200,250);
         }
-        p,h2{
+        p{
             margin:5px;
         }
         td,th,table{
-            border: 2px solid rgba(150,150,150,0.1);
+            border: 0px solid rgba(150,150,150,0.1);
             border-collapse:collapse;
             padding:8px;
         }
         table{
-            width:70%;
-            margin:25px;
             background-color:rgba(250,250,250,0.6);
         }
         tr:nth-child(even) {
@@ -21,9 +19,14 @@
             list-style-type:none;
             background-color:rgb(50,50,50);
             padding:0;
-            margin:0;
+            margin:0%;
             width:100%;
             overflow:hidden;
+        }
+        body{
+            background-image:Url("images/pixelLandscape.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         
         li{
@@ -39,3 +42,21 @@
         li a:hover{
             background-color:rgb(30,30,30);
         }
+        .rounded{
+            background-color:rgba(250,250,250,0.6);
+            margin:10%;
+            width:90%;
+            border-radius: 10px;
+        }
+        .rounded{
+            background-color:rgba(250,250,250,0.6);
+            margin:10%;
+            width:90%;
+            border-radius: 10px;
+        }
+        .heading{
+            background-color:rgb(120,60,60);
+            font-family:impact;
+            text-align:center;
+        }
+        

@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test Page</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-            <p id="demo">Click me for time!</p>
-        </button>
-        <br>
-        <button type="button" onclick="document.getElementById('rando').innerHTML = Math.floor(Math.random() * 5)">
-            Press me for a compliment!
-        </button>
-        <script>
-        var id = $(value).attr('rando');
-            if ( id = 1) {
-                document.getElementById('compliment').innerHTML = "You look awesome!";
-            }
-        </script>
-    </body>
-</html>
+<!doctype html>
+<head>
+
+</head>
+<body>
+	<script>
+	var on = false
+		function clickedw(){
+		    if (on == false){
+		        document.getElementById("hello").innerHTML = "Yah clicked meh!";
+		        document.getElementById("hello").style.fontSize = "40px";
+		        on = true
+		    }
+		    else if (on == true){
+		        document.getElementById("hello").innerHTML = "Click me!"
+		        document.getElementById("hello").style.fontSize = "1em";
+		        on = false
+		    }
+		}
+	</script>
+	<center><h1 style="color:rgb(50,100,200);">Welcome to the game.<h1></center>
+	<hr style="color:rgb(80,110,150); border:20px; height:10px;"/>
+	<button id="hello" type="button" onclick="clickedw()">Click me!</button>
+</body>
